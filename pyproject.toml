@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "django>=5.1.4",
     "django-vite>=3.0.5",
+    "environs[django]>=11.2.1",
     "inertia-django>=0.6.0",
     "whitenoise>=6.8.2",
 ]
