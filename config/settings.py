@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "inertia",
     "config",
     "frontend",
+    "backend",
 ]
 
 MIDDLEWARE = [
