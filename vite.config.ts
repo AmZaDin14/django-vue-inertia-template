@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     outDir: resolve("./frontend/static/dist"),
     assetsDir: "",
-    manifest: true,
+    manifest: "manifest.json",
     emptyOutDir: true,
     rollupOptions: {
       // Overwrite default .html entry to main.ts in the static directory
