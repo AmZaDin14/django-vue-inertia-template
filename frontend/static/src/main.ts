@@ -1,6 +1,7 @@
 import "vite/modulepreload-polyfill";
 import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
+import './style.css';
 
 createInertiaApp({
   resolve: (name) => import(`./pages/${name}.vue`),
