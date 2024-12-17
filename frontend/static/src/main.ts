@@ -4,7 +4,10 @@ import { createInertiaApp } from "@inertiajs/vue3";
 import './style.css';
 
 createInertiaApp({
-  resolve: (name) => import(`./pages/${name}.vue`),
+  resolve: (name) => {
+    const pages = import.meta.glob('./pages/**/*.vue', { eager: true });
+    return pages[`./pages/${name}.vue`];
+  },
   setup({ el, App, props, plugin }) {
     createApp({ render: () => h(App, props) })
       .use(plugin)
