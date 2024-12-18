@@ -1,9 +1,13 @@
 @_default:
   just --list
 
-# Serve for development
+# Django runserver
 serve:
-  bunx concurrently "bun run dev" "python manage.py runserver"
+  python manage.py runserver
+
+# Serve for development
+dev:
+  bunx concurrently --names 'vite,django' -c '#f0db4f,#4B8BBE' "bun run dev" "python manage.py runserver"
 
 # Build for production
 build:
