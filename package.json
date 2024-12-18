@@ -1,19 +1,20 @@
 {
-  "dependencies": {},
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build && rimraf staticfiles/ && python manage.py collectstatic --no-input"
-  },
-  "type": "module",
-  "devDependencies": {
-    "@inertiajs/vue3": "^2.0.0",
-    "@types/node": "^22.10.2",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "rimraf": "^6.0.1",
-    "tailwindcss": "^3.4.16",
-    "vite": "^6.0.3",
-    "vue": "^3.5.13"
-  }
+	"dependencies": {},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build && rimraf staticfiles/"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@inertiajs/vue3": "^2.0.0",
+		"@types/node": "^22.10.2",
+		"@vitejs/plugin-vue": "^5.2.1",
+		"autoprefixer": "^10.4.20",
+		"concurrently": "^9.1.0",
+		"postcss": "^8.4.49",
+		"rimraf": "^6.0.1",
+		"tailwindcss": "^3.4.16",
+		"vite": "^6.0.3",
+		"vue": "^3.5.13"
+	}
 }
