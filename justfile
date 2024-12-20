@@ -1,5 +1,12 @@
+set dotenv-load
+
 @_default:
   just --list
+
+# Prepare .env
+bootstrap:
+  cp .env.example .env
+  python manage.py generate_secret_key
 
 # Django runserver
 serve:
