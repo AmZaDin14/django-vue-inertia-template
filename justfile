@@ -5,8 +5,10 @@ set dotenv-load
 
 # Prepare .env
 bootstrap:
+  uv sync
+  bun install
   cp .env.example .env
-  python manage.py generate_secret_key
+  .venv/bin/python manage.py generate_secret_key
 
 # Django runserver
 serve:
